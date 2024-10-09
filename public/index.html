@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackable Line Chart with ECharts</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+</head>
+<body>
+    <div id="dataColumns" class="draggable-list">
+        <div class="draggable-item" draggable="true">10 Min Std Dev</div>
+        <div class="draggable-item" draggable="true">Time</div>
+        <div class="draggable-item" draggable="true">10 Min Sampled Avg</div>
+    </div>
+    <button id="addChart">Add Chart</button>
+    <div id="chartContainer" style="width: 100%; height: 400px;"></div>
+    <label for="interpolateValue">Interpolate Value:</label>
+    <input type="number" id="interpolateValue" placeholder="Enter Value">
+    <button id="plotInterpolated">Plot Interpolated Value</button>
+    <button id="saveImage">Save Chart as Image</button>
+    <script src="app.js"></script>
+</body>
+</html>
